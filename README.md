@@ -1,5 +1,5 @@
 # iConfig: Edge-Driven IoT Device Management using Wearables and Drones
-PhD thesis "Edge-Driven Proximity Service Platform for the Internet of Things in Indoor Environments" of Michael Haus
+PhD thesis *Edge-Driven Proximity Service Platform for the Internet of Things in Indoor Environments* of Michael Haus
 
 This repository addresses the RQ2 of the research problem:<br/>
 **How to effectively manage IoT deployments consisting of spatially distributed, heterogeneous, wireless IoT devices?**
