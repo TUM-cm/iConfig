@@ -1,0 +1,23 @@
+anonymous user study
+
+pre-test questions:
+1. gender (M/F/prefer not to tell), education (BSc/MSc/PhD/not tell), age range (10-20,20-30,30-40,40-50,50+/not tell)
+2. do you have experience to configure IoT devices? Y or N
+3. do you think it's difficult to manage / configure IoT devices? easy 1 - 5 difficult
+4. do you prefer manual or automatic configuration? 
+
+1st, use the vendor application to configure, according to instruction, record the time, error rate
+
+2nd, use our application to configure, record the time, error rate
+
+after-test questions:
+1. do you think the manual configuration? easy to difficult
+2. what bothers you in configuration: time consuming, or else
+3. how do you feel the automatic service? 1 - 5
+4. do you have any concern for this service
+
+
+
+qualitative analysis, via survey, identify the problem, general insight
+
+quantitative analysis, via checking the test results e.g., latency, error rates, to verify the performance / benefits 

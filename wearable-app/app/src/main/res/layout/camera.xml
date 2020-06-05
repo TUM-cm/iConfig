@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextureView
+        android:id="@+id/cameraView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/zoomLabel"
+        android:textSize="32sp"
+        android:textColor="#ff0000"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Zoom: " />
+
+    <TextView
+        android:id="@+id/zoomValue"
+        android:textSize="32sp"
+        android:textColor="#ff0000"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/zoomLabel"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/zoomLabelMax"
+        android:textSize="32sp"
+        android:textColor="#0000ff"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/zoomValue"
+        android:layout_marginLeft="40dp"
+        android:text="Max: " />
+
+    <TextView
+        android:id="@+id/zoomMax"
+        android:textSize="32sp"
+        android:textColor="#0000ff"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/zoomLabelMax" />
+
+</RelativeLayout>

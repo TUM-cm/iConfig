@@ -1,0 +1,16 @@
+Room splitted in three parts of voice input
+04-27 12:45:59.490 17841-17841/de.tum.in.cm.android.eddystonemanager D/SpeechController: room target: 01.36.279, room input: 80.36.471, similarity: 0.7777778506278992
+04-27 12:46:13.192 17841-17841/de.tum.in.cm.android.eddystonemanager D/SpeechController: room target: 01.36.279, room input: 01.36.471, similarity: 0.9407407522201539
+04-27 12:46:27.251 17841-17841/de.tum.in.cm.android.eddystonemanager D/SpeechController: room target: 01.36.279, room input: 70.26.179, similarity: 0.8042328357696533
+04-27 12:46:40.588 17841-17841/de.tum.in.cm.android.eddystonemanager D/SpeechController: room target: 01.36.279, room input: 01.36.179, similarity: 0.9703703641891479
+
+One voice input with advanced grammar
+04-27 12:54:02.230 27032-27032/de.tum.in.cm.android.eddystonemanager D/SpeechController: room target: 01.36.279, room input: 01.36.179, similarity: 0.9703703641891479
+04-27 12:54:26.649 27032-27032/de.tum.in.cm.android.eddystonemanager D/SpeechController: room target: 01.36.279, room input: 01.36.279, similarity: 1.0
+04-27 12:54:47.879 27032-27032/de.tum.in.cm.android.eddystonemanager D/SpeechController: room target: 01.36.279, room input: 41.36.279, similarity: 0.9259259104728699
+04-27 12:55:02.797 27032-27032/de.tum.in.cm.android.eddystonemanager D/SpeechController: room target: 01.36.279, room input: 01.36.179, similarity: 0.9703703641891479
+
+0,965
+0,8725
+
+9,25% better with once voice input

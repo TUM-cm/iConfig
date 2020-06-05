@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>{{title}}</title>
+	<meta http-equiv="refresh" content="10">
+</head>
+<style>
+	table, th, td {
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+	th, td {
+		padding: 5px;
+	}
+	th {
+		text-align: left;
+	}
+	img {
+	    width: 250px;
+	}
+</style>
+<body>
+	<h3>
+		{{title}} <input type="button" value="Reload Page"
+			onClick="document.location.reload(true)">
+	</h3>
+	{{status}}
+	<table>
+		<tr>
+			{% for column in columns %}
+			<th>{{column.upper()}}</th> {% endfor %}
+		</tr>
+		{{rows}}
+	</table>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<html>
+<head>
+<title>IoT Management User Study</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).on('focus', 'input[readonly]', function () {
+        this.blur();
+    });
+	function checkForm()
+	{
+		var iot_test_manual_configuration = $('input[name=iot_test_manual_configuration]:checked').val();
+		var iot_test_automatic_configuration = $('input[name=iot_test_automatic_configuration]:checked').val();
+		var start_manual_config_1 = ($('#start_manual_config_1').val().trim().length > 0);
+		var end_manual_config_1 = ($('#end_manual_config_1').val().trim().length > 0);
+		var start_manual_config_2 = ($('#start_manual_config_2').val().trim().length > 0);
+		var end_manual_config_2 = ($('#end_manual_config_2').val().trim().length > 0);
+		var start_manual_config_3 = ($('#start_manual_config_3').val().trim().length > 0);
+		var end_manual_config_3 = ($('#end_manual_config_3').val().trim().length > 0);
+		var values = [iot_test_manual_configuration, iot_test_automatic_configuration,
+					start_manual_config_1, end_manual_config_1,
+					start_manual_config_2, end_manual_config_2,
+					start_manual_config_3, end_manual_config_3];
+		for(var i = 0; i < values.length; i+= 1) {
+			if (!values[i]) {
+				alert("Please answer all questions.");
+				return false;
+			}
+		}
+		if (iot_test_manual_configuration == 'N' || iot_test_automatic_configuration == 'N') {
+			alert("Please complete practical test phase before continue with questions.");
+			return false;
+		}
+		document.survey.submit();
+	}
+	
+	function getStartTimestamp1()
+	{
+		$('#start_manual_config_1').val(Math.floor(Date.now() / 1000));
+		
+	}
+	function getEndTimestamp1()
+	{
+		$('#end_manual_config_1').val(Math.floor(Date.now() / 1000));
+		$('#end_timestamp_1').prop('disabled', true);
+	}
+	
+	function getStartTimestamp2()
+	{
+		$('#start_manual_config_2').val(Math.floor(Date.now() / 1000));
+	}
+	function getEndTimestamp2()
+	{
+		$('#end_manual_config_2').val(Math.floor(Date.now() / 1000));
+		$('#end_timestamp_2').prop('disabled', true);
+	}
+	
+	function getStartTimestamp3()
+	{
+		$('#start_manual_config_3').val(Math.floor(Date.now() / 1000));
+	}
+	function getEndTimestamp3()
+	{
+		$('#end_manual_config_3').val(Math.floor(Date.now() / 1000));
+		$('#end_timestamp_3').prop('disabled', true);
+	}
+</script>
+
+<style type="text/css">
+li {
+    margin-bottom: 10px;
+}
+</style>
+
+</head>
+<body>
+
+<h3>Test Phase</h3>
+
+<form name="study" action="../action.php" method="post">
+<input type="hidden" name="next_html" value="part3.html"/>
+
+<h4>Manual Configuration</h4>
+
+Please set the following configuration to all three beacons manually. Therefore use the vendor app called Beeks.<br>
+For each beacon, before you start log the time and when you are finished log the time again.<p>
+
+Beacon 1 (Mac: C9:ED:20:D2:6A:5F, sBeacon Id: 8EC968106F272A76):<br>
+<input type="button" value="Start" id="start_timestamp_1" onclick="getStartTimestamp1()"/>: <input type="text" name="start_manual_config_1" id="start_manual_config_1" readonly="readonly"/><p>
+<input type="button" value="End" id="end_timestamp_1" onclick="getEndTimestamp1()"/>: <input type="text" name="end_manual_config_1" id="end_manual_config_1" readonly="readonly"/><p>
+
+Beacon 2 (Mac: EB:26:C9:E4:DC:5B, sBeacon Id: C28C3BC4AE8EAC43):<br>
+<input type="button" value="Start" id="start_timestamp_2" onclick="getStartTimestamp2()"/>: <input type="text" name="start_manual_config_2" id="start_manual_config_2" readonly="readonly"/><p>
+<input type="button" value="End" id="end_timestamp_2" onclick="getEndTimestamp2()"/>: <input type="text" name="end_manual_config_2" id="end_manual_config_2" readonly="readonly"/><p>
+
+Beacon 3 (Mac: D6:82:27:05:E4:0B, sBeacon Id: 2F0446B54A6B9998):<br>
+<input type="button" value="Start" id="start_timestamp_3" onclick="getStartTimestamp3()"/>: <input type="text" name="start_manual_config_3" id="start_manual_config_3" readonly="readonly"/><p>
+<input type="button" value="End" id="end_timestamp_3" onclick="getEndTimestamp3()"/>: <input type="text" name="end_manual_config_3" id="end_manual_config_3" readonly="readonly"/><p>
+
+<b>Attention:</b><br>
+<ol>
+	<li>Current password for all beacons to connect: <b><font color="red">iotcm2016</font></b>. To set a new password, you have to press enter. A notification will confirm the change.</li>
+	<li>Field iBeacon UID requires hyphens (-) for validation. Unfortunately, the vendor app does not allow to enter hyphens (-).<br>
+	As a result, you have to enter the values in uppercase per section and don't delete any of the hyphens, otherwise you have to start again.<br>
+	In addition, first set UID and save. Afterwards set the major and minor. It's not possible to save all values at once.</li>
+	<li>Eddystone UID only allows uppercase letters. And after setting the value it is changed to (for verification):<br>
+	uid: 86A642FCBF54, namespace: C361A11338D9F940D1DD</li>
+	<li>Configure Eddystone TLM at the end, because the vendor app has a bug and does not update the GUI and blocks all further interactions.<br>
+	Anyway, the configuration is set, you see it by an additional notification in the background. As a result, please abort the vendor app manually.</li>
+</ol>
+
+<p style="font-family:courier; font-size:11pt; white-space:pre;">
+{
+    password : <b><font color="blue">iotcm2017</font></b>,
+    sBeacon : {
+    	day mode : {
+    		advertisement rate : <b><font color="blue">0.6 Hz</font></b>,
+    		transmission power : <b><font color="blue">-12 dBm</font></b>
+    	},
+    	night mode : {
+    		advertisement rate : <b><font color="blue">0.2 Hz</font></b>,
+    		transmission power : <b><font color="blue">-40 dBm</font></b>
+    	}
+    },
+    iBeacon : {
+        uuid : <b><font color="blue">18BD9ED1-1C6E-4419-8204-E924D68D065E</font></b>,
+        major : <b><font color="blue">2</font></b>,
+        minor : <b><font color="blue">1</font></b>,
+        day mode : {
+        	advertisement rate : <b><font color="blue">0.6 Hz</font></b>,
+        	transmission power : <b><font color="blue">-12 dBm</font></b>
+        },
+        night mode : {
+        	advertisement rate : <b><font color="blue">0.2 Hz</font></b>,
+        	transmission power : <b><font color="blue">-40 dBm</font></b>
+        }
+    },
+    eddystone : {
+        uid : <b><font color="blue">C361A11338D9</font></b>,
+        namespace : <b><font color="blue">FE40D1DD86A642FCBF54</font></b>,
+        url : <b><font color="blue">https://www.wikipedia.org</font></b>,
+        URL : {
+        day mode : {
+        	advertisement rate : <b><font color="blue">0.6 Hz</font></b>,
+        	transmission power : <b><font color="blue">-12 dBm</font></b>
+        },
+        night mode : {
+        	advertisement rate : <b><font color="blue"> 0.2 Hz</font></b>,
+        	transmission power : <b><font color="blue">-40 dBm</font></b>
+        },
+        connection rates : {
+        	connectable rate : <b><font color="blue">2 Hz</font></b>,
+        	non connectable rate : <b><font color="blue">1 Hz</font></b>
+        }
+    	},
+        UID : {
+        day mode : {
+        	advertisement rate : <b><font color="blue">0.6 Hz</font></b>,
+        	transmission power : <b><font color="blue">-12 dBm</font></b>
+        },
+        night mode : {
+        	advertisement rate : <b><font color="blue">0.2 Hz</font></b>,
+        	transmission power : <b><font color="blue">-40 dBm</font></b>
+        },
+        connection rates : {
+        	connectable rate : <b><font color="blue">2 Hz</font></b>,
+        	non connectable rate : <b><font color="blue">1 Hz</font></b>
+        }
+        },
+        TLM : {
+        day mode : {
+        	advertisement rate : <b><font color="blue">0.6 Hz</font></b>,
+        	transmission power : <b><font color="blue">-12 dBm</font></b>
+        },
+        night mode : {
+        	advertisement rate : <b><font color="blue">0.2 Hz</font></b>,
+        	transmission power : <b><font color="blue">-40 dBm</font></b>
+        }
+        }
+    }
+}
+</p>
+
+Have you completed the manual configuration:<br>
+<input type="radio" name="iot_test_manual_configuration" value="Y">Yes<br>
+<input type="radio" name="iot_test_manual_configuration" value="N">No<p>
+
+<b><mark>Please wait before you continue: We have to verify your configuration of each beacon.</mark></b><p>
+
+<h4>Automatic Configuration</h4>
+
+The configuration is already predefined by the administrator. Please use Beacon Manager to register and set the configuration.<p>
+
+Explanation:<br>
+<ol>
+	<li>Identify the beacon to make sure it is the right one (red light).</li>
+	<li>Enter sBeacon id manually when it's not already set by the app automatically.</li>
+	<li>Make a picture of the beacon for easier localization.</li>
+	<li>Nearest room: 01.05.038</li>
+	<li>Location description: office</li>
+	<li>Comment: hello</li>
+</ol>
+
+Have you completed the automatic configuration:<br>
+<input type="radio" name="iot_test_automatic_configuration" value="Y">Yes<br>
+<input type="radio" name="iot_test_automatic_configuration" value="N">No<p>
+
+<input type="submit"  name="submit" value="submit" onClick="return checkForm()">
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+2017/03/08 11:42:52 ################ Start Connect ################
+2017/03/08 11:42:53 ################ On Connect ################
+2017/03/08 11:42:53 connect, elapsed time: 903, connected: true, authenticatd: true
+2017/03/08 11:42:53 set password, elapsed time: 907, result: true
+2017/03/08 11:42:53 ################ Start Verify Config ################
+2017/03/08 11:42:54 url set, elapsed time: 489 result: true
+2017/03/08 11:42:54 uid set, elapsed time: 548, result instance: true, result namespace: true
+2017/03/08 11:42:54 i beacon major minor, elapsed time:602, major: true, minor: true
+2017/03/08 11:42:54 i beacon uuid, elapsed time: 662, result: true
+2017/03/08 11:42:54 url interval tx power set, elapsed time: 735, day advertisement rate: true, day transmission power: true, night advertisement rate: true, night transmission power: true
+2017/03/08 11:42:54 url connection rate set, elapsed time: 777, result connectable: true, result non connectable: true
+2017/03/08 11:42:54 uid interval tx power set, elapsed time: 72, day advertisement rate: true, day transmission power: true, night advertisement rate: true, night transmission power: true
+2017/03/08 11:42:54 uid connection rate set, elapsed time: 114, result connectable: true, result non connectable: true
+2017/03/08 11:42:54 tlm interval tx power set, elapsed time: 67, day advertisement rate: true, day transmission power: true, night advertisement rate: true, night transmission power: true
+2017/03/08 11:42:54 i beacon interval tx power set, elapsed time: 70, day advertisement rate: true, day transmission power: true, night advertisement rate: true, night transmission power: true
+2017/03/08 11:42:54 s beacon interval tx power set, elapsed time: 74, day advertisement rate: true, day transmission power: true, night advertisement rate: true, night transmission power: true
+2017/03/08 11:42:54 ################ Start Statistics ################
+2017/03/08 11:42:54 connect
+2017/03/08 11:42:54 mean connect: 903.0, std connect: 0.0, median connect: 903.0, min connect: 903.0, max connect: 903.0, connect rate: 1.0, authenticated rate: 1.0
+2017/03/08 11:42:54 config
+2017/03/08 11:42:54 fields: 31, resultError: 0, resultSuccess: 31, failureRead: 0, failureSet: 0
+2017/03/08 11:42:54 error rate: 0.0, success rate: 1.0, failure read rate: 0.0, failure set rate: 0.0, total duration config: 10212.0, average config duration per field: 329.41935483870964
+2017/03/08 11:42:54 fields failure read: 
+2017/03/08 11:42:54 fields failure set: 
+2017/03/08 11:42:54 fields user failed to set: 
+2017/03/08 11:42:54 ################ End Statistics ################
+2017/03/08 11:42:54 ################ End Check Config ################

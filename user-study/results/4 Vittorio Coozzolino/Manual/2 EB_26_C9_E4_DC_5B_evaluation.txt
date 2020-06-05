@@ -1,0 +1,32 @@
+2017/03/07 13:33:01 ################ Start Connect ################
+2017/03/07 13:33:05 ################ On Connect ################
+2017/03/07 13:33:05 connect, elapsed time: 4022, connected: true, authenticatd: false
+2017/03/07 13:33:23 ################ On Connect ################
+2017/03/07 13:33:23 connect, elapsed time: 21838, connected: true, authenticatd: false
+2017/03/07 13:33:23 ################ Start Connect ################
+2017/03/07 13:33:25 ################ On Connect ################
+2017/03/07 13:33:25 connect, elapsed time: 2181, connected: true, authenticatd: true
+2017/03/07 13:33:25 set password, elapsed time: 2183, result: false
+2017/03/07 13:33:25 ################ Start Verify Config ################
+2017/03/07 13:33:26 url set, elapsed time: 497 result: true
+2017/03/07 13:33:26 uid set, elapsed time: 571, result instance: true, result namespace: true
+2017/03/07 13:33:26 i beacon major minor, elapsed time:639, major: true, minor: true
+2017/03/07 13:33:26 i beacon uuid, elapsed time: 708, result: true
+2017/03/07 13:33:26 url interval tx power set, elapsed time: 838, day advertisement rate: true, day transmission power: true, night advertisement rate: true, night transmission power: true
+2017/03/07 13:33:26 url connection rate set, elapsed time: 891, result connectable: true, result non connectable: true
+2017/03/07 13:33:26 uid interval tx power set, elapsed time: 83, day advertisement rate: true, day transmission power: true, night advertisement rate: true, night transmission power: true
+2017/03/07 13:33:26 uid connection rate set, elapsed time: 148, result connectable: true, result non connectable: true
+2017/03/07 13:33:27 tlm interval tx power set, elapsed time: 74, day advertisement rate: true, day transmission power: true, night advertisement rate: true, night transmission power: true
+2017/03/07 13:33:27 i beacon interval tx power set, elapsed time: 76, day advertisement rate: true, day transmission power: true, night advertisement rate: true, night transmission power: true
+2017/03/07 13:33:27 s beacon interval tx power set, elapsed time: 71, day advertisement rate: true, day transmission power: true, night advertisement rate: true, night transmission power: true
+2017/03/07 13:33:27 ################ Start Statistics ################
+2017/03/07 13:33:27 connect
+2017/03/07 13:33:27 connect duration: 2181.0, connect rate: 1.0, authenticated rate: 1.0
+2017/03/07 13:33:27 config
+2017/03/07 13:33:27 fields: 31, resultError: 1, resultSuccess: 30, failureRead: 0, failureSet: 0
+2017/03/07 13:33:27 error rate: 0.03225806451612903, success rate: 0.967741935483871, failure read rate: 0.0, failure set rate: 0.0, total duration config: 12454.0, average config duration per field: 401.7419354838709
+2017/03/07 13:33:27 fields failure read: 
+2017/03/07 13:33:27 fields failure set: 
+2017/03/07 13:33:27 fields user failed to set: PASSWORD
+2017/03/07 13:33:27 ################ End Statistics ################
+2017/03/07 13:33:27 ################ End Check Config ################

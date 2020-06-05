@@ -1,0 +1,12 @@
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.gz
+*.DS_Store
+/main.pdf
+*.pygtex
+*.pygstyle
+*.pyc
+*.xcf

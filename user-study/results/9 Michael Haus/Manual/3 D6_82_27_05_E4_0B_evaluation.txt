@@ -1,0 +1,27 @@
+2017/03/08 12:01:45 ################ Start Connect ################
+2017/03/08 12:01:46 ################ On Connect ################
+2017/03/08 12:01:46 connect, elapsed time: 604, connected: true, authenticatd: true
+2017/03/08 12:01:46 set password, elapsed time: 607, result: true
+2017/03/08 12:01:46 ################ Start Verify Config ################
+2017/03/08 12:01:46 url set, elapsed time: 475 result: true
+2017/03/08 12:01:46 uid set, elapsed time: 550, result instance: true, result namespace: true
+2017/03/08 12:01:46 i beacon major minor, elapsed time:620, major: true, minor: true
+2017/03/08 12:01:46 i beacon uuid, elapsed time: 736, result: true
+2017/03/08 12:01:46 url interval tx power set, elapsed time: 811, day advertisement rate: true, day transmission power: true, night advertisement rate: true, night transmission power: true
+2017/03/08 12:01:47 url connection rate set, elapsed time: 877, result connectable: true, result non connectable: true
+2017/03/08 12:01:47 uid interval tx power set, elapsed time: 81, day advertisement rate: true, day transmission power: true, night advertisement rate: true, night transmission power: true
+2017/03/08 12:01:47 uid connection rate set, elapsed time: 150, result connectable: true, result non connectable: true
+2017/03/08 12:01:47 tlm interval tx power set, elapsed time: 119, day advertisement rate: true, day transmission power: true, night advertisement rate: true, night transmission power: true
+2017/03/08 12:01:47 i beacon interval tx power set, elapsed time: 103, day advertisement rate: false, day transmission power: false, night advertisement rate: false, night transmission power: false
+2017/03/08 12:01:47 s beacon interval tx power set, elapsed time: 71, day advertisement rate: true, day transmission power: true, night advertisement rate: true, night transmission power: true
+2017/03/08 12:01:47 ################ Start Statistics ################
+2017/03/08 12:01:47 connect
+2017/03/08 12:01:47 mean connect: 604.0, std connect: 0.0, median connect: 604.0, min connect: 604.0, max connect: 604.0, connect rate: 1.0, authenticated rate: 1.0
+2017/03/08 12:01:47 config
+2017/03/08 12:01:47 fields: 31, resultError: 4, resultSuccess: 27, failureRead: 0, failureSet: 0
+2017/03/08 12:01:47 error rate: 0.12903225806451613, success rate: 0.8709677419354839, failure read rate: 0.0, failure set rate: 0.0, total duration config: 10952.0, average config duration per field: 353.2903225806452
+2017/03/08 12:01:47 fields failure read: 
+2017/03/08 12:01:47 fields failure set: 
+2017/03/08 12:01:47 fields user failed to set: I_BEACON_DAY_ADVERTISEMENT_RATE, I_BEACON_DAY_TRANSMISSION_POWER, I_BEACON_NIGHT_ADVERTISEMENT_RATE, I_BEACON_NIGHT_TRANSMISSION_POWER
+2017/03/08 12:01:47 ################ End Statistics ################
+2017/03/08 12:01:47 ################ End Check Config ################

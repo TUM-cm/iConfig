@@ -1,0 +1,53 @@
+2017/03/08 14:17:01 ################ Start Connect ################
+2017/03/08 14:17:01 ################ On Connect ################
+2017/03/08 14:17:01 connect, elapsed time: 541, connected: true, authenticatd: false
+2017/03/08 14:17:21 ################ On Connect ################
+2017/03/08 14:17:21 connect, elapsed time: 20238, connected: true, authenticatd: false
+2017/03/08 14:17:21 ################ Start Connect ################
+2017/03/08 14:17:22 ################ On Connect ################
+2017/03/08 14:17:22 connect, elapsed time: 414, connected: true, authenticatd: true
+2017/03/08 14:17:22 set password, elapsed time: 415, result: false
+2017/03/08 14:17:22 ################ Start Identify ################
+2017/03/08 14:17:22 start automatic config: 1488979042
+2017/03/08 14:17:22 identify, elapsed time: 370
+2017/03/08 14:17:22 ################ End Identify ################
+################ Start General ################
+mac: D6:82:27:05:E4:0B, sBeacon id: null
+################ End General ################
+2017/03/08 14:18:37 ################ Start Connect ################
+2017/03/08 14:18:38 ################ On Connect ################
+2017/03/08 14:18:38 connect, elapsed time: 1549, connected: true, authenticatd: false
+2017/03/08 14:18:58 ################ On Connect ################
+2017/03/08 14:18:58 connect, elapsed time: 21339, connected: true, authenticatd: false
+2017/03/08 14:18:58 ################ Start Connect ################
+2017/03/08 14:18:59 ################ On Connect ################
+2017/03/08 14:18:59 connect, elapsed time: 769, connected: true, authenticatd: true
+2017/03/08 14:18:59 set password, elapsed time: 770, result: false
+2017/03/08 14:18:59 ################ Start Register ################
+2017/03/08 14:18:59 maintenance tlm, elapsed time: 0, result: true
+2017/03/08 14:18:59 i beacon major minor, elapsed time:369, major: true, minor: true
+2017/03/08 14:18:59 i beacon uuid, elapsed time: 436, result: true
+2017/03/08 14:18:59 uid set, elapsed time: 514, result instance: true, result namespace: true
+2017/03/08 14:19:00 url set, elapsed time: 693 result: true
+2017/03/08 14:19:00 maintenance device status read, elapsed time: 755, result: true
+2017/03/08 14:19:00 url interval tx power set, elapsed time: 837, day advertisement rate: true, day transmission power: true, night advertisement rate: true, night transmission power: true
+2017/03/08 14:19:00 url connection rate set, elapsed time: 897, result connectable: true, result non connectable: true
+2017/03/08 14:19:00 uid interval tx power set, elapsed time: 86, day advertisement rate: true, day transmission power: true, night advertisement rate: true, night transmission power: true
+2017/03/08 14:19:00 uid connection rate set, elapsed time: 148, result connectable: true, result non connectable: true
+2017/03/08 14:19:00 tlm interval tx power set, elapsed time: 83, day advertisement rate: true, day transmission power: true, night advertisement rate: true, night transmission power: true
+2017/03/08 14:19:00 i beacon interval tx power set, elapsed time: 71, day advertisement rate: true, day transmission power: true, night advertisement rate: true, night transmission power: true
+2017/03/08 14:19:00 s beacon interval tx power set, elapsed time: 76, day advertisement rate: true, day transmission power: true, night advertisement rate: true, night transmission power: true
+2017/03/08 14:19:01 set password, elapsed time: 631, result: true
+2017/03/08 14:19:01 ################ Start Statistics ################
+2017/03/08 14:19:01 connect
+2017/03/08 14:19:01 connect duration: 769.0, connect rate: 1.0, authenticated rate: 1.0
+2017/03/08 14:19:01 config
+2017/03/08 14:19:01 fields: 31, resultError: 0, resultSuccess: 31, failureRead: 0, failureSet: 0
+2017/03/08 14:19:01 error rate: 0.0, success rate: 1.0, failure read rate: 0.0, failure set rate: 0.0, total duration config: 10228.0, average config duration per field: 329.9354838709677
+2017/03/08 14:19:01 fields failure read: 
+2017/03/08 14:19:01 fields failure set: 
+2017/03/08 14:19:01 fields user failed to set: 
+2017/03/08 14:19:01 ################ End Statistics ################
+2017/03/08 14:19:01 end automatic config: 1488979141
+2017/03/08 14:19:01 total config time (connect, identify, register, initial config): 2746
+2017/03/08 14:19:01 ################ End Register ################

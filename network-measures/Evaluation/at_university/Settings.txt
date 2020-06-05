@@ -1,0 +1,8 @@
+Day and Night mode
+
+S Beacon, Eddystone URL, Eddystone UID, Eddystone TLM
+- Advertisement rate: every 2.5 seconds
+- Transmission power: 12 meters
+
+wrk
+- 60 seconds for test duration

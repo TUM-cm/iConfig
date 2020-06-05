@@ -1,0 +1,116 @@
+\section{Testbed Installation}
+
+\subsection{Installation of wrk Benchmark Tool}
+\begin{minted}
+[
+frame=lines,
+framesep=2mm,
+breaklines,
+baselinestretch=1.2,
+fontsize=\footnotesize,
+]
+{bash}
+sudo apt-get install build-essential libssl-dev git
+git clone https://github.com/wg/wrk.git
+cd wrk
+make
+# move the executable to somewhere in your PATH
+sudo cp wrk /usr/local/bin
+\end{minted}
+
+\subsection{Installation of Ubuntu Bash on Windows}
+\begin{enumerate}
+	\item Update and security: activate developer mode
+	\item Control panel: install windows subsystem for Linux 
+	(beta)
+	\item Restart
+	\item Search after bash and install	
+\end{enumerate}
+
+\section{Full Evaluation Results}
+
+\begin{table}[H]
+	\centering
+	\small
+	\begin{tabular}{ccc}
+		\includegraphics[width=0.14\textwidth]{result/at_home/latency}
+		&
+		\includegraphics[width=0.14\textwidth]{result/at_home/requests}
+		&
+		\includegraphics[width=0.14\textwidth]{result/at_home/transfer}
+		\\
+		\multicolumn{3}{c}{(a) Worst case}
+		\\
+		\includegraphics[width=0.14\textwidth]{result/at_university/latency}
+		&
+		\includegraphics[width=0.14\textwidth]{result/at_university/requests}
+		&
+		\includegraphics[width=0.14\textwidth]{result/at_university/transfer}
+		\\
+		\multicolumn{3}{c}{(b) Realistic settings}
+	\end{tabular}
+	\caption{Full evaluation results.}
+	\label{fig:FullEvaluationResults}
+\end{table}
+
+\begin{table}[H]
+	\caption{Evaluation results: Latency}
+	\label{tab:EvaluationResultsLatency}
+	\centering
+	\begin{tabular}{L{0.9cm}lllllll}		
+		\toprule		
+		& & \multicolumn{6}{c}{File size} \\	
+		\cmidrule{3-8}
+		Testbed & Setting & 1\,M & 10\,M & 50\,M & 
+		100\,M & 500\,M & 1\,G \\
+		\midrule	
+		\multicolumn{8}{c}{Latency (us)} \\
+		\midrule
+		\multirow{4}{*}{\parbox{0.9cm}{Worst case}} & -\,BLE & 
+		62.39 & 574.63 
+		& 0 & 0 & 0 & 0 \\
+		& +\,BLE & 70.77 & 662.63 & 0 & 0 & 0 & 0 \\
+		\cmidrule{2-8}
+		& Abs. & 8.38 & 88.00 & 0 & 0 & 0 & 0 \\
+		& Rel. & 13.44 & 15.31 & 0 & 0 & 0 & 0 \\		
+		\midrule		
+		\multirow{4}{*}{\parbox{0.9cm}{Realistic settings}} & 
+		-\,BLE & 
+		103.20 & 960.04 & 0 & 0 & 0 & 0 \\
+		& +\,BLE & 108.23 & 198.63 & 0 & 0 & 0 & 0 \\
+		\cmidrule{2-8}		
+		& Abs. & 5.02 & 761.40 & 0 & 0 & 0 & 0 \\
+		& Rel. & 4.87 & 79.31 & 0 & 0 & 0 & 0 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\caption{Evaluation results: Requests}
+	\label{tab:EvaluationResultsRequests}
+	\centering
+	\begin{tabular}{L{0.9cm}lllllll}		
+		\toprule		
+		& & \multicolumn{6}{c}{File size} \\	
+		\cmidrule{3-8}
+		Testbed & Setting & 1\,M & 10\,M & 50\,M & 
+		100\,M & 500\,M & 1\,G \\
+		\midrule		
+		\multicolumn{8}{c}{Requests / s} \\
+		\midrule
+		\multirow{4}{*}{\parbox{0.9cm}{Worst case}} & -\,BLE & 
+		16.00 & 1.25 & 0 & 0 & 0 & 0 \\		
+		& +\,BLE & 14.07 & 1.00 & 0 & 0 & 0 & 0 \\		
+		\cmidrule{2-8}
+		& Abs. & 1.93 & 0.25 & 0 & 0 & 0 & 0 \\
+		& Rel. & 12.06 & 19.87 & 0 & 0 & 0 & 0 \\
+		\midrule		
+		\multirow{4}{*}{\parbox{0.9cm}{Realistic settings}} & 
+		-\,BLE & 9.68 & 0.58 & 0 & 0 & 0 & 0 \\			
+		& +\,BLE & 9.28 & 0.19 & 0 & 0 & 0 & 0 \\		
+		\cmidrule{2-8}
+		& Abs. & 0.40 & 0.38 & 0 & 0 & 0 & 0 \\
+		& Rel. & 4.16 & 66.26 & 0 & 0 & 0 & 0 \\		
+		\bottomrule
+	\end{tabular}
+\end{table}

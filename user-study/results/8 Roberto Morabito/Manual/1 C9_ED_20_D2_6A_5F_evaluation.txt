@@ -1,0 +1,73 @@
+########## Start Connection Test ##########
+2017/03/08 10:15:13 ################ Start Connect ################
+2017/03/08 10:15:15 ################ On Connect ################
+2017/03/08 10:15:15 connect, elapsed time: 1939, connected: true, authenticatd: false
+2017/03/08 10:15:15 ################ Start Connect ################
+2017/03/08 10:15:16 ################ On Connect ################
+2017/03/08 10:15:16 connect, elapsed time: 1644, connected: true, authenticatd: false
+2017/03/08 10:15:16 ################ Start Connect ################
+2017/03/08 10:15:18 ################ On Connect ################
+2017/03/08 10:15:18 connect, elapsed time: 1652, connected: true, authenticatd: false
+2017/03/08 10:15:18 ################ Start Connect ################
+2017/03/08 10:15:19 ################ On Connect ################
+2017/03/08 10:15:19 connect, elapsed time: 1356, connected: true, authenticatd: false
+2017/03/08 10:15:19 ################ Start Connect ################
+2017/03/08 10:15:22 ################ On Connect ################
+2017/03/08 10:15:22 connect, elapsed time: 2476, connected: true, authenticatd: false
+2017/03/08 10:15:22 ################ Start Connect ################
+2017/03/08 10:15:23 ################ On Connect ################
+2017/03/08 10:15:23 connect, elapsed time: 1209, connected: true, authenticatd: false
+2017/03/08 10:15:23 ################ Start Connect ################
+########## Start Connection Test ##########
+2017/03/08 10:16:33 ################ Start Connect ################
+2017/03/08 10:16:35 ################ On Connect ################
+2017/03/08 10:16:35 connect, elapsed time: 1575, connected: true, authenticatd: false
+2017/03/08 10:16:35 ################ Start Connect ################
+2017/03/08 10:16:37 ################ On Connect ################
+2017/03/08 10:16:37 connect, elapsed time: 2045, connected: true, authenticatd: false
+2017/03/08 10:16:37 ################ Start Connect ################
+2017/03/08 10:16:40 ################ On Connect ################
+2017/03/08 10:16:40 connect, elapsed time: 2925, connected: true, authenticatd: false
+2017/03/08 10:16:40 ################ Start Connect ################
+2017/03/08 10:16:42 ################ On Connect ################
+2017/03/08 10:16:42 connect, elapsed time: 2473, connected: true, authenticatd: false
+2017/03/08 10:16:42 ################ Start Connect ################
+2017/03/08 10:16:47 ################ On Connect ################
+2017/03/08 10:16:47 connect, elapsed time: 4633, connected: true, authenticatd: false
+2017/03/08 10:16:47 ################ Start Connect ################
+2017/03/08 10:16:48 ################ On Connect ################
+2017/03/08 10:16:48 connect, elapsed time: 1663, connected: true, authenticatd: false
+2017/03/08 10:16:48 ################ Start Connect ################
+2017/03/08 10:16:50 ################ On Connect ################
+2017/03/08 10:16:50 connect, elapsed time: 1220, connected: true, authenticatd: false
+2017/03/08 10:16:50 ################ Start Connect ################
+2017/03/08 10:16:57 ################ On Connect ################
+2017/03/08 10:16:57 connect, elapsed time: 7101, connected: true, authenticatd: false
+2017/03/08 10:16:57 ################ Start Connect ################
+2017/03/08 10:25:34 ################ Start Connect ################
+2017/03/08 10:25:35 ################ On Connect ################
+2017/03/08 10:25:35 connect, elapsed time: 527, connected: true, authenticatd: true
+2017/03/08 10:25:35 set password, elapsed time: 537, result: true
+2017/03/08 10:25:35 ################ Start Verify Config ################
+2017/03/08 10:25:35 url set, elapsed time: 380 result: true
+2017/03/08 10:25:35 uid set, elapsed time: 436, result instance: true, result namespace: true
+2017/03/08 10:25:35 i beacon major minor, elapsed time:493, major: true, minor: true
+2017/03/08 10:25:35 i beacon uuid, elapsed time: 554, result: true
+2017/03/08 10:25:35 url interval tx power set, elapsed time: 660, day advertisement rate: true, day transmission power: false, night advertisement rate: true, night transmission power: true
+2017/03/08 10:25:35 url connection rate set, elapsed time: 666, result connectable: true, result non connectable: true
+2017/03/08 10:25:35 uid interval tx power set, elapsed time: 76, day advertisement rate: false, day transmission power: false, night advertisement rate: false, night transmission power: false
+2017/03/08 10:25:35 uid connection rate set, elapsed time: 121, result connectable: false, result non connectable: false
+2017/03/08 10:25:36 tlm interval tx power set, elapsed time: 69, day advertisement rate: true, day transmission power: true, night advertisement rate: true, night transmission power: true
+2017/03/08 10:25:36 i beacon interval tx power set, elapsed time: 95, day advertisement rate: false, day transmission power: false, night advertisement rate: false, night transmission power: false
+2017/03/08 10:25:36 s beacon interval tx power set, elapsed time: 84, day advertisement rate: true, day transmission power: true, night advertisement rate: true, night transmission power: true
+2017/03/08 10:25:36 ################ Start Statistics ################
+2017/03/08 10:25:36 connect
+2017/03/08 10:25:36 mean connect: 527.0, std connect: 0.0, median connect: 527.0, min connect: 527.0, max connect: 527.0, connect rate: 1.0, authenticated rate: 1.0
+2017/03/08 10:25:36 config
+2017/03/08 10:25:36 fields: 31, resultError: 11, resultSuccess: 20, failureRead: 0, failureSet: 0
+2017/03/08 10:25:36 error rate: 0.3548387096774194, success rate: 0.6451612903225806, failure read rate: 0.0, failure set rate: 0.0, total duration config: 8839.0, average config duration per field: 285.1290322580645
+2017/03/08 10:25:36 fields failure read: 
+2017/03/08 10:25:36 fields failure set: 
+2017/03/08 10:25:36 fields user failed to set: I_BEACON_DAY_ADVERTISEMENT_RATE, I_BEACON_DAY_TRANSMISSION_POWER, I_BEACON_NIGHT_ADVERTISEMENT_RATE, I_BEACON_NIGHT_TRANSMISSION_POWER, EDDYSTONE_URL_DAY_TRANSMISSION_POWER, EDDYSTONE_UID_DAY_ADVERTISEMENT_RATE, EDDYSTONE_UID_DAY_TRANSMISSION_POWER, EDDYSTONE_UID_NIGHT_ADVERTISEMENT_RATE, EDDYSTONE_UID_NIGHT_TRANSMISSION_POWER, EDDYSTONE_UID_CONNECTABLE_RATE, EDDYSTONE_UID_NON_CONNECTABLE_RATE
+2017/03/08 10:25:36 ################ End Statistics ################
+2017/03/08 10:25:36 ################ End Check Config ################

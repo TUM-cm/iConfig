@@ -1,0 +1,69 @@
+2017/03/08 10:51:12 ################ Start Connect ################
+2017/03/08 10:51:15 ################ On Connect ################
+2017/03/08 10:51:15 connect, elapsed time: 2763, connected: true, authenticatd: false
+2017/03/08 10:51:34 ################ On Connect ################
+2017/03/08 10:51:34 connect, elapsed time: 22470, connected: true, authenticatd: false
+2017/03/08 10:51:34 ################ Start Connect ################
+2017/03/08 10:51:35 ################ On Connect ################
+2017/03/08 10:51:35 connect, elapsed time: 485, connected: true, authenticatd: true
+2017/03/08 10:51:35 set password, elapsed time: 487, result: false
+2017/03/08 10:51:35 ################ Start Identify ################
+2017/03/08 10:51:35 start automatic config: 1488966695
+2017/03/08 10:51:35 identify, elapsed time: 347
+2017/03/08 10:51:35 ################ End Identify ################
+################ Start General ################
+mac: C9:ED:20:D2:6A:5F, sBeacon id: null
+################ End General ################
+2017/03/08 10:52:43 ################ Start Connect ################
+2017/03/08 10:52:45 ################ On Connect ################
+2017/03/08 10:52:45 connect, elapsed time: 1574, connected: true, authenticatd: false
+2017/03/08 10:53:05 ################ On Connect ################
+2017/03/08 10:53:05 connect, elapsed time: 21385, connected: true, authenticatd: false
+2017/03/08 10:53:05 ################ Start Connect ################
+2017/03/08 10:53:05 ################ On Connect ################
+2017/03/08 10:53:05 connect, elapsed time: 745, connected: true, authenticatd: true
+2017/03/08 10:53:05 set password, elapsed time: 747, result: false
+2017/03/08 10:53:05 ################ Start Identify ################
+2017/03/08 10:53:05 start automatic config: 1488966785
+2017/03/08 10:53:06 identify, elapsed time: 411
+2017/03/08 10:53:06 ################ End Identify ################
+################ Start General ################
+mac: C9:ED:20:D2:6A:5F, sBeacon id: null
+################ End General ################
+2017/03/08 10:54:43 ################ Start Connect ################
+2017/03/08 10:54:44 ################ On Connect ################
+2017/03/08 10:54:44 connect, elapsed time: 663, connected: true, authenticatd: false
+2017/03/08 10:55:03 ################ On Connect ################
+2017/03/08 10:55:03 connect, elapsed time: 20383, connected: true, authenticatd: false
+2017/03/08 10:55:03 ################ Start Connect ################
+2017/03/08 10:55:04 ################ On Connect ################
+2017/03/08 10:55:04 connect, elapsed time: 837, connected: true, authenticatd: true
+2017/03/08 10:55:04 set password, elapsed time: 838, result: false
+2017/03/08 10:55:04 ################ Start Register ################
+2017/03/08 10:55:04 maintenance tlm, elapsed time: 0, result: true
+2017/03/08 10:55:04 i beacon major minor, elapsed time:326, major: true, minor: true
+2017/03/08 10:55:05 i beacon uuid, elapsed time: 388, result: true
+2017/03/08 10:55:05 uid set, elapsed time: 469, result instance: true, result namespace: true
+2017/03/08 10:55:05 url set, elapsed time: 611 result: true
+2017/03/08 10:55:05 maintenance device status read, elapsed time: 662, result: true
+2017/03/08 10:55:05 url interval tx power set, elapsed time: 727, day advertisement rate: true, day transmission power: true, night advertisement rate: true, night transmission power: true
+2017/03/08 10:55:05 url connection rate set, elapsed time: 782, result connectable: true, result non connectable: true
+2017/03/08 10:55:05 uid interval tx power set, elapsed time: 63, day advertisement rate: true, day transmission power: true, night advertisement rate: true, night transmission power: true
+2017/03/08 10:55:05 uid connection rate set, elapsed time: 115, result connectable: true, result non connectable: true
+2017/03/08 10:55:05 tlm interval tx power set, elapsed time: 65, day advertisement rate: true, day transmission power: true, night advertisement rate: true, night transmission power: true
+2017/03/08 10:55:05 i beacon interval tx power set, elapsed time: 124, day advertisement rate: true, day transmission power: true, night advertisement rate: true, night transmission power: true
+2017/03/08 10:55:05 s beacon interval tx power set, elapsed time: 83, day advertisement rate: true, day transmission power: true, night advertisement rate: true, night transmission power: true
+2017/03/08 10:55:06 set password, elapsed time: 598, result: true
+2017/03/08 10:55:06 ################ Start Statistics ################
+2017/03/08 10:55:06 connect
+2017/03/08 10:55:06 connect duration: 837.0, connect rate: 1.0, authenticated rate: 1.0
+2017/03/08 10:55:06 config
+2017/03/08 10:55:06 fields: 31, resultError: 0, resultSuccess: 31, failureRead: 0, failureSet: 0
+2017/03/08 10:55:06 error rate: 0.0, success rate: 1.0, failure read rate: 0.0, failure set rate: 0.0, total duration config: 9229.0, average config duration per field: 297.7096774193548
+2017/03/08 10:55:06 fields failure read: 
+2017/03/08 10:55:06 fields failure set: 
+2017/03/08 10:55:06 fields user failed to set: 
+2017/03/08 10:55:06 ################ End Statistics ################
+2017/03/08 10:55:06 end automatic config: 1488966906
+2017/03/08 10:55:06 total config time (connect, identify, register, initial config): 2681
+2017/03/08 10:55:06 ################ End Register ################

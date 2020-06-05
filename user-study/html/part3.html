@@ -1,0 +1,107 @@
+<html>
+<head>
+<title>IoT Management User Study</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+	function checkForm() {		
+		var iot_manual_configuration_difficulty = $('input[name=iot_manual_configuration_difficulty]:checked').val();
+		var iot_manual_configuration_meaning = ($('#iot_manual_configuration_meaning').val().trim().length > 0);
+		var iot_automatic_configuration_difficulty = $('input[name=iot_automatic_configuration_difficulty]:checked').val();
+		var iot_automatic_configuration_meaning = ($('#iot_automatic_configuration_meaning').val().trim().length > 0);
+		var web_app_feature_monitor_config_status = $('input[name=web_app_feature_monitor_config_status]:checked').val();
+		var web_app_feature_localization = $('input[name=web_app_feature_localization]:checked').val();
+		var web_app_feature_monitor_health = $('input[name=web_app_feature_monitor_health]:checked').val();
+		var web_app_feature_monitor_broken_status = $('input[name=web_app_feature_monitor_broken_status]:checked').val();
+		var iconfig_use_cases_applications = ($('#iconfig_use_cases_applications').val().trim().length > 0);
+		var values = [iot_manual_configuration_difficulty, iot_manual_configuration_meaning,
+					iot_automatic_configuration_difficulty, iot_automatic_configuration_meaning,
+					web_app_feature_monitor_config_status, web_app_feature_localization,
+					web_app_feature_monitor_health, web_app_feature_monitor_broken_status,
+					iconfig_use_cases_applications];
+		for(var i = 0; i < values.length; i+= 1) {
+			if (!values[i]) {
+				alert("Please answer all questions.");
+				return false;
+			}
+		}
+		document.survey.submit();
+	}
+</script>
+
+</head>
+<body>
+
+<h3>After-Test Questions</h3>
+
+<form name="study" action="../action.php" method="post">
+
+What do you think about the manual configuration?<br>
+<input type="radio" name="iot_manual_configuration_difficulty" value="1">1 - easy<br>
+<input type="radio" name="iot_manual_configuration_difficulty" value="2">2<br>
+<input type="radio" name="iot_manual_configuration_difficulty" value="3">3<br>
+<input type="radio" name="iot_manual_configuration_difficulty" value="4">4<br>
+<input type="radio" name="iot_manual_configuration_difficulty" value="5">5 - difficult<p>
+
+What bothers you in manual configuration: time consuming, or else?<br>
+<textarea rows="4" cols="50" name="iot_manual_configuration_meaning" id="iot_manual_configuration_meaning"></textarea><p>
+
+What do you think about the automatic configuration?<br>
+<input type="radio" name="iot_automatic_configuration_difficulty" value="1">1 - easy<br>
+<input type="radio" name="iot_automatic_configuration_difficulty" value="2">2<br>
+<input type="radio" name="iot_automatic_configuration_difficulty" value="3">3<br>
+<input type="radio" name="iot_automatic_configuration_difficulty" value="4">4<br>
+<input type="radio" name="iot_automatic_configuration_difficulty" value="5">5 - difficult<p>
+
+Do you have any concern for this automatic configuration?<br>
+<textarea rows="4" cols="50" name="iot_automatic_configuration_meaning" id="iot_automatic_configuration_meaning"></textarea><p>
+
+Which features do you prefer in an web application to configure beacons?<br>
+Legend: 1 (irelevant) - 5 (useful)
+<ul>
+	<li>
+		Monitor configuration status of each beacon (wait for update, up-to-date).<br>
+		<input type="radio" name="web_app_feature_monitor_config_status" value="1">1
+		<input type="radio" name="web_app_feature_monitor_config_status" value="2">2
+		<input type="radio" name="web_app_feature_monitor_config_status" value="3">3
+		<input type="radio" name="web_app_feature_monitor_config_status" value="4">4
+		<input type="radio" name="web_app_feature_monitor_config_status" value="5">5
+	</li>
+	<li>
+		Show exact location of beacons via map or picture to find them in the environment.<br>
+		<input type="radio" name="web_app_feature_localization" value="1">1
+		<input type="radio" name="web_app_feature_localization" value="2">2
+		<input type="radio" name="web_app_feature_localization" value="3">3
+		<input type="radio" name="web_app_feature_localization" value="4">4
+		<input type="radio" name="web_app_feature_localization" value="5">5
+	</li>
+	<li>
+		Monitor beacon health like battery voltage or uptime to estimate the remaining lifetime.<br>
+		<input type="radio" name="web_app_feature_monitor_health" value="1">1
+		<input type="radio" name="web_app_feature_monitor_health" value="2">2
+		<input type="radio" name="web_app_feature_monitor_health" value="3">3
+		<input type="radio" name="web_app_feature_monitor_health" value="4">4
+		<input type="radio" name="web_app_feature_monitor_health" value="5">5
+	</li>
+	<li>
+		Monitor beacon functionality, that each packet type like Eddystone or iBeacon is configureable or broken.<br>
+		<input type="radio" name="web_app_feature_monitor_broken_status" value="1">1
+		<input type="radio" name="web_app_feature_monitor_broken_status" value="2">2
+		<input type="radio" name="web_app_feature_monitor_broken_status" value="3">3
+		<input type="radio" name="web_app_feature_monitor_broken_status" value="4">4
+		<input type="radio" name="web_app_feature_monitor_broken_status" value="5">5
+	</li>
+</ul>
+
+<!--<a href="https://vmott11.informatik.tu-muenchen.de:11234/">Example Beacon Configurator (user: beacon_config, pw: cm2016beacons)</a><p>-->
+<a target="_blank" href="https://vmott11.informatik.tu-muenchen.de:11234/">Example Beacon Configurator</a><p>
+
+Do you have any use cases or applications in other fields to suggest, that our configuration framework (iConfig) can be applied?<br>
+<textarea rows="4" cols="50" name="iconfig_use_cases_applications" id="iconfig_use_cases_applications"></textarea><p>
+
+<input type="submit"  name="submit" value="submit" onClick="return checkForm()">
+
+</form>
+
+</body>
+</html>

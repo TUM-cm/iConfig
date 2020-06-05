@@ -1,0 +1,36 @@
+2017/03/07 17:00:40 ################ Start Connect ################
+2017/03/07 17:00:41 ################ On Connect ################
+2017/03/07 17:00:41 connect, elapsed time: 563, connected: true, authenticatd: false
+2017/03/07 17:00:41 ################ Start Connect ################
+2017/03/07 17:00:41 ################ On Connect ################
+2017/03/07 17:00:41 connect, elapsed time: 491, connected: true, authenticatd: false
+2017/03/07 17:01:01 ################ On Connect ################
+2017/03/07 17:01:01 connect, elapsed time: 20260, connected: true, authenticatd: false
+2017/03/07 17:01:01 ################ End Check Config ################
+2017/03/07 17:01:20 ################ Start Connect ################
+2017/03/07 17:01:21 ################ On Connect ################
+2017/03/07 17:01:21 connect, elapsed time: 509, connected: true, authenticatd: true
+2017/03/07 17:01:21 set password, elapsed time: 511, result: true
+2017/03/07 17:01:21 ################ Start Verify Config ################
+2017/03/07 17:01:21 url set, elapsed time: 473 result: true
+2017/03/07 17:01:21 uid set, elapsed time: 542, result instance: false, result namespace: true
+2017/03/07 17:01:22 i beacon major minor, elapsed time:609, major: true, minor: true
+2017/03/07 17:01:22 i beacon uuid, elapsed time: 683, result: true
+2017/03/07 17:01:22 url interval tx power set, elapsed time: 763, day advertisement rate: true, day transmission power: true, night advertisement rate: true, night transmission power: true
+2017/03/07 17:01:22 url connection rate set, elapsed time: 828, result connectable: true, result non connectable: true
+2017/03/07 17:01:22 uid interval tx power set, elapsed time: 85, day advertisement rate: true, day transmission power: true, night advertisement rate: true, night transmission power: true
+2017/03/07 17:01:22 uid connection rate set, elapsed time: 148, result connectable: true, result non connectable: true
+2017/03/07 17:01:22 tlm interval tx power set, elapsed time: 84, day advertisement rate: true, day transmission power: true, night advertisement rate: true, night transmission power: true
+2017/03/07 17:01:22 i beacon interval tx power set, elapsed time: 74, day advertisement rate: true, day transmission power: true, night advertisement rate: true, night transmission power: true
+2017/03/07 17:01:22 s beacon interval tx power set, elapsed time: 71, day advertisement rate: true, day transmission power: true, night advertisement rate: true, night transmission power: true
+2017/03/07 17:01:22 ################ Start Statistics ################
+2017/03/07 17:01:22 connect
+2017/03/07 17:01:22 connect duration: 509.0, connect rate: 1.0, authenticated rate: 1.0
+2017/03/07 17:01:22 config
+2017/03/07 17:01:22 fields: 31, resultError: 1, resultSuccess: 30, failureRead: 0, failureSet: 0
+2017/03/07 17:01:22 error rate: 0.03225806451612903, success rate: 0.967741935483871, failure read rate: 0.0, failure set rate: 0.0, total duration config: 10229.0, average config duration per field: 329.96774193548384
+2017/03/07 17:01:22 fields failure read: 
+2017/03/07 17:01:22 fields failure set: 
+2017/03/07 17:01:22 fields user failed to set: EDDYSTONE_UID_INSTANCE
+2017/03/07 17:01:22 ################ End Statistics ################
+2017/03/07 17:01:22 ################ End Check Config ################

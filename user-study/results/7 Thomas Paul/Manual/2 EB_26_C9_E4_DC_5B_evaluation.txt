@@ -1,0 +1,27 @@
+2017/03/08 08:47:27 ################ Start Connect ################
+2017/03/08 08:47:30 ################ On Connect ################
+2017/03/08 08:47:30 connect, elapsed time: 2869, connected: true, authenticatd: true
+2017/03/08 08:47:30 set password, elapsed time: 2873, result: true
+2017/03/08 08:47:30 ################ Start Verify Config ################
+2017/03/08 08:47:30 url set, elapsed time: 384 result: true
+2017/03/08 08:47:31 uid set, elapsed time: 455, result instance: true, result namespace: true
+2017/03/08 08:47:31 i beacon major minor, elapsed time:566, major: true, minor: true
+2017/03/08 08:47:31 i beacon uuid, elapsed time: 642, result: true
+2017/03/08 08:47:31 url interval tx power set, elapsed time: 727, day advertisement rate: true, day transmission power: true, night advertisement rate: true, night transmission power: true
+2017/03/08 08:47:31 url connection rate set, elapsed time: 784, result connectable: true, result non connectable: true
+2017/03/08 08:47:31 uid interval tx power set, elapsed time: 91, day advertisement rate: true, day transmission power: true, night advertisement rate: true, night transmission power: true
+2017/03/08 08:47:31 uid connection rate set, elapsed time: 143, result connectable: true, result non connectable: true
+2017/03/08 08:47:31 tlm interval tx power set, elapsed time: 83, day advertisement rate: true, day transmission power: true, night advertisement rate: true, night transmission power: true
+2017/03/08 08:47:31 i beacon interval tx power set, elapsed time: 71, day advertisement rate: true, day transmission power: true, night advertisement rate: true, night transmission power: true
+2017/03/08 08:47:31 s beacon interval tx power set, elapsed time: 71, day advertisement rate: true, day transmission power: true, night advertisement rate: true, night transmission power: true
+2017/03/08 08:47:31 ################ Start Statistics ################
+2017/03/08 08:47:31 connect
+2017/03/08 08:47:31 connect duration: 2869.0, connect rate: 1.0, authenticated rate: 1.0
+2017/03/08 08:47:31 config
+2017/03/08 08:47:31 fields: 31, resultError: 0, resultSuccess: 31, failureRead: 0, failureSet: 0
+2017/03/08 08:47:31 error rate: 0.0, success rate: 1.0, failure read rate: 0.0, failure set rate: 0.0, total duration config: 11967.0, average config duration per field: 386.03225806451616
+2017/03/08 08:47:31 fields failure read: 
+2017/03/08 08:47:31 fields failure set: 
+2017/03/08 08:47:31 fields user failed to set: 
+2017/03/08 08:47:31 ################ End Statistics ################
+2017/03/08 08:47:31 ################ End Check Config ################

@@ -1,0 +1,5 @@
+Day and Night mode
+
+S Beacon, Eddystone URL, Eddystone UID, Eddystone TLM
+- Advertisement rate: 10 times a second
+- Transmission power: 80 meters

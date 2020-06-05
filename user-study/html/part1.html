@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>IoT Management User Study</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+	function checkForm() {		
+		var gender = $('input[name=gender]:checked').val();
+		var education = $('input[name=education]:checked').val();
+		var iot_experience = $('input[name=iot_experience]:checked').val();
+		var iot_configuration_difficulty = $('input[name=iot_configuration_difficulty]:checked').val();
+		var iot_configuration = $('input[name=iot_configuration]:checked').val();
+		var values = [gender, education, iot_experience, iot_configuration_difficulty, iot_configuration];
+		for(var i = 0; i < values.length; i+= 1) {
+			if (!values[i]) {
+				alert("Please answer all questions.");
+				return false;
+			}
+		}
+		document.survey.submit();
+	}
+</script>
+
+</head>
+<body>
+
+<h3>Pre-Test Questions</h3>
+
+<form name="study" action="../action.php" method="post">
+<input type="hidden" name="next_html" value="part2.html"/>
+
+<h4>Personal Details</h4>
+Gender:<br>
+<input type="radio" name="gender" value="male">Male<br>
+<input type="radio" name="gender" value="female">Female<br>
+<input type="radio" name="gender" value="other">Other<p>
+
+Education:<br>
+<input type="radio" name="education" value="bsc">BSc<br>
+<input type="radio" name="education" value="msc">MSc<br>
+<input type="radio" name="education" value="phd">PhD<br>
+<input type="radio" name="education" value="other">Other<p>
+
+Age:<br>
+<input type="radio" name="age" value="10-20">10-20<br>
+<input type="radio" name="age" value="20-30">20-30<br>
+<input type="radio" name="age" value="30-40">30-40<br>
+<input type="radio" name="age" value="40-50">40-50<br>
+<input type="radio" name="age" value="50+">50+<br>
+<input type="radio" name="age" value="other">Other<p>
+
+<h4>IoT Management</h4>
+
+Do you have experience to configure IoT devices?<br>
+<input type="radio" name="iot_experience" value="Y">Yes<br>
+<input type="radio" name="iot_experience" value="N">No<p>
+
+Do you think it's difficult to manage / configure IoT devices?<br>
+<input type="radio" name="iot_configuration_difficulty" value="1">1 - easy<br>
+<input type="radio" name="iot_configuration_difficulty" value="2">2<br>
+<input type="radio" name="iot_configuration_difficulty" value="3">3<br>
+<input type="radio" name="iot_configuration_difficulty" value="4">4<br>
+<input type="radio" name="iot_configuration_difficulty" value="5">5 - difficult<p>
+
+Do you prefer manual or automatic configuration?<br>
+<input type="radio" name="iot_configuration" value="manual">Manual<br>
+<input type="radio" name="iot_configuration" value="automatic">Automatic<p>
+
+<input type="submit" name="submit" value="submit" onClick="return checkForm()">
+
+</form>
+
+</body>
+</html>
