@@ -4,7 +4,7 @@ Edge-Driven IoT Device Management using Wearables and Drones
 For the PhD thesis "Edge-Driven Proximity Service Platform for the Internet of Things in Indoor Environments" of Michael Haus
 
 This repository addresses the following question of the research problem:
-How to efficiently manage IoT deployments with spatially distributed, heterogeneous, wireless IoT devices?
+RQ2: How to efficiently manage IoT deployments with spatially distributed, heterogeneous, wireless IoT devices?
 
 We begin addressing this question by presenting the design and implementation of an IoT device management called
 iConfig with a global device map for administration and multiple edge modules intended to run on user devices,
